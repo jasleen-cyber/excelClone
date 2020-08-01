@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu-container {
+    border: 2px solid purple ;
+    height: 30 px;
+}
+#menu-options {
+    border: 2px solid yellow;
+    height: 55 px;
+}
+#formula-container {
+    border: 2px solid green ;
+    height: 30 px;
+}
+#content {
+    border: 2px solid crimson ;
+    height: calc( 100vh - 90px );
+    background-color: aliceblue;
+    position: relative;
+    overflow: auto;
+}
+#grid{
+   
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+}
+
+
+#sheets {
+    border: 1px solid red ;
+    height: 40 px;
+}
+#row {
+    display: flex;
+}
+#cell{
+    min-width: 94px;
+    min-height: 30px;
+    
+    border: 1px solid teal;
+    text-align: center;
+}
+#alphabets{
+    min-width: 94px;
+    min-height: 30px;
+    text-align: center;
+   
+    
+    border: 1px solid orange;
+}
+.col .cell{
+    width: 25px;
+    height: 30px;
+    background-color: seashell;
+    border: 1px solid orange;
+    text-align: center;
+
+}
+#top-left-cell {
+    height: 30px;
+    width : 25px;
+    background-color: chartreuse;
+}
+#top-row{
+    display: flex;
+    background-color: seashell;
+    position: absolute;
+    top: 0px;
+    left: 25px;
+}
+
+

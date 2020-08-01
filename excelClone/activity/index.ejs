@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>EXCEL CLONE</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='script.js'></script>
+</head>
+<body>
+ <div id="menu-container"> menu</div> 
+ <div id="menu-options">menu options </div>
+ <div id="formula-container"> 
+   <input type="text" id = "address-input"> 
+   <input type="text" id="formula-input">
+
+ </div>
+ <div id="content">
+     <div id="top-left-cell"></div>
+     <div id="top-row"> 
+         <% for( let i=0;i<col;i++ ) {%>
+            <div id = "alphabets" > 
+             <%= String.fromCharCode(i+65) %>
+              
+            </div>
+            <%}%>
+     </div>
+     <div class="col ">
+         <%for( let j=0;j<row;j++ ){ %>
+             <div class="cell">
+                 <%=j+1%>
+             </div>
+             <%}%>
+     </div>
+     <div id ="grid"> 
+         <% for( let i=0;i<row;i++ ) {%>
+      <div id="row" class="row" >
+          <% for( let j=0 ;j<col ; j++ ) {%>
+            <div id="cell" class="cell" contenteditable="true" row-id= <%=i%> col-id= <%=j+1%> > 
+                <%=i%><%=j+1%>
+
+            </div>
+            <%}%>
+      </div>
+      <%}%>
+     </div>
+ 
+
+
+
+
+
+
+</div>  
+<div id = "sheets">sheets
+</div>  
+</body>
+</html>
